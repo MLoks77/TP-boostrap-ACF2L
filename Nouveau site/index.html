@@ -1,104 +1,193 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Bienvenue sur le site de l'Aéro-Club de Frotey-Les-Lures"
+    />
+    <meta
+      name="keywords"
+      content="Aéro-Club de Frotey-Les-Lures, Frotey-Les-Lures, Aéro-Club, Frotey, Lures, Aéroclub, Frotey Les Lures, Aéroclub de Frotey Les Lures, Aéroclub de Frotey-Les-Lures, Aéroclub de Frotey-Les-Lures, Aéroclub de Frotey-Les-Lures"
+    />
+    <meta name="author" content="Maxime Derènes, Maxime Farrugia" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta property="og:title" content="AC2FL - Aéro-Club de Frotey-Les-Lures" />
+    <meta
+      property="og:description"
+      content="Découvrez le site de l'Aéro-Club de Frotey-Les-Lures"
+    />
+    <meta property="og:type" content="website" />
 
-	<meta name="description" content="Bienvenue sur le site de l'Aéro-Club de Frotey-Les-Lures">
-	<meta name="keywords"
-		content="Aéro-Club de Frotey-Les-Lures, Frotey-Les-Lures, Aéro-Club, Frotey, Lures, Aéroclub, Frotey Les Lures, Aéroclub de Frotey Les Lures, Aéroclub de Frotey-Les-Lures, Aéroclub de Frotey-Les-Lures, Aéroclub de Frotey-Les-Lures">
-	<meta name="author" content="Maxime Derènes, Maxime Farrugia">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta property="og:title" content="AC2FL - Aéro-Club de Frotey-Les-Lures">
-	<meta property="og:description" content="Découvrez le site de l'Aéro-Club de Frotey-Les-Lures">
-	<meta property="og:type" content="website">
+    <link
+      rel="icon"
+      type="image/png"
+      href="images/favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
 
-	<link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96" />
-	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-	<link rel="shortcut icon" href="images/favicon/favicon.ico" />
-	<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
-	<link rel="manifest" href="images/favicon/site.webmanifest" />
+    <title>ACF2L - Aéroclub de Frotey Les Lures</title>
 
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
 
-	<title>ACF2L - Aéroclub de Frotey Les Lures</title>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark" id="main-navbar">
+      <div class="container">
+        <!-- Navbar Brand start -->
+        <a class="navbar-brand" href="#">
+          <img
+            src="images/logo/logo2acf2l.png"
+            alt="logo du club"
+            width="100"
+            height="100"
+        /></a>
+        <!-- Navbar Brand end -->
 
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-	<link href="css/style.css" rel="stylesheet">
+        <ul class="navbar-nav ml-auto" id="main-menu">
+          <li class="nav-item">
+            <a class="text-dark nav-link active" href="#home">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="text-dark nav-link" href="#activities">Nos activites</a>
+          </li>
+          <li class="nav-item">
+            <a class="text-dark nav-link" href="#courses">Categories d'ULM</a>
+          </li>
+          <li class="nav-item">
+            <a class="text-dark nav-link" href="#about-us"
+              >les moyens pedagogiques</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="text-dark nav-link" href="#gallery">Galerie</a>
+          </li>
+          <li class="nav-item">
+            <a class="text-dark nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
 
-</head>
+        <div class="navbar-toggle"></div>
+        <div id="responsive-menu"></div>
+      </div>
+    </nav>
 
-<body>
+    <header>
+      <section id="landing">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5 bg-dark rounded">
+              <!--presentation dans le landing-->
+              <article class="text-white border border-dark rounded p-3">
+                <h2>
+                  Bienvenue sur le site de <br />l'Aéro-Club de Frotey-Les-Lures
+                </h2>
+                <p></p>
+                <a>Visiter</a>
+              </article>
+            </div>
+            <div class="col-md-7">
+              <!-- ne rien mettre-->
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <br>
+    <section id="accueil">
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators</div>">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+          <div class="carousel-item active">
+            <img src="../Site ACF2L/images/course-6.jpg" class="d-block w-100" alt="Image du premier slide" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Description du premier slide</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/carousel/slide2.jpg" class="d-block w-100" alt="Image d'avion" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Avion</h5>
+              <p>Description du deuxième slide</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/carousel/slide3.jpg" class="d-block w-100" alt="Image du troisième slide" />
+            <img src="..." class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Précédent</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Suivant</span>
+        </button>
+      </div>
+    </section>
+    <section id="activites"></section>
+    <section id="categoriesulm"></section>
+    <section id="moyenspedagogiques"></section>
 
-	<nav class="navbar navbar-expand-lg navbar-dark" id="main-navbar">
-		<div class="container">
-			<!-- Navbar Brand start -->
-			<a class="navbar-brand" href="#">
-			<img src="images/logo/logo2acf2l.png" alt="logo du club" width="100" height="100"/></a>
-			<!-- Navbar Brand end -->
+    <section id="galerie"></section>
 
-			<ul class="navbar-nav ml-auto" id="main-menu">
-				<li class="nav-item"><a class="text-dark nav-link active" href="#home">Accueil</a></li>
-				<li class="nav-item"><a class="text-dark nav-link" href="#activities">Nos activites</a></li>
-				<li class="nav-item"><a class="text-dark nav-link" href="#courses">Categories d'ULM</a></li>
-				<li class="nav-item"><a class="text-dark nav-link" href="#about-us">les moyens pedagogiques</a></li>
-				<li class="nav-item"><a class="text-dark nav-link" href="#gallery">Galerie</a></li>
-				<li class="nav-item"><a class="text-dark nav-link" href="#contact">Contact</a></li>
-			</ul>
+    <section id="contact"></section>
 
-			<div class="navbar-toggle"></div>
-			<div id="responsive-menu"></div>
-		</div>
-	</nav>
-
-	<header>
-			<section id="landing">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-5 bg-dark rounded">
-							<!--presentation dans le landing-->
-							<article class="text-white border border-dark rounded p-3">
-								<h2>Bienvenue sur le site de <br>l'Aéro-Club de Frotey-Les-Lures</h2>
-								<p></p>
-								<a>Visiter</a>
-							</article>
-						</div>
-						<div class="col-md-7">
-							<!-- ne rien mettre-->
-						</div>
-					</div>
-				</div>
-			</section>
-
-	</header>
-
-
-
-	<section id="accueil">
-
-	</section>
-	<section id="activites">
-
-	</section>
-	<section id="categoriesulm">
-
-	</section>
-	<section id="moyenspedagogiques">
-
-	</section>
-
-	<section id="galerie">
-
-	</section>
-
-	<section id="contact">
-
-	</section>
-
-	<footer>
-	</footer>
-
-</body>
-
+    <footer></footer>
+  </body>
 </html>
