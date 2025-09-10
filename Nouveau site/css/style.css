@@ -1,18 +1,80 @@
+
+
 #landing{
     background-image: url(../images/skyblue.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 75vh;
     width: 100%;
     position: relative;
-    z-index: 1;
-    
+    z-index: 1;    
 }
 
 .bg-site{
     background-color:#90B3B7;
 }
+
+#navbarlink p:hover {
+  color : black;
+}
+
+#navbarlink a{
+  font-size: 16px;
+}
+
+#navbarlink {
+  z-index: 1050;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+#landing h1{
+  font-size: 45px;
+}
+
+#landing p{
+  font-size: 2vh;
+}
+
+.mt-7 {
+  margin-top: 7rem;
+}
+
+/* partie font */
+
+.sansation-light {
+  font-family: "Sansation", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* partie font */
+
+/*Divider*/
+
+.custom-shape-divider-top-1757531528 {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1757531528 svg {
+  position: relative;
+  display: block;
+  width: calc(150% + 1.3px);
+  height: 135px;
+}
+
+.custom-shape-divider-top-1757531528 .shape-fill {
+  fill: #90B3B7;
+}
+
+/*findivider*/
 
 /*Ce bouton provient du site UIverse*/
 
@@ -94,3 +156,11 @@
   }
   
   /*Ce bouton provient du site UIverse*/
+
+  /*partie media*/
+
+  @media (max-width: 768px) {
+    #navbarlink a {
+      font-size: 12px;
+    }
+  }
