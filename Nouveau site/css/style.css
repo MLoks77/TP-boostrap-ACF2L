@@ -17,6 +17,11 @@
 
 #navbarlink p:hover {
   color : black;
+  transition: 0.5s;
+}
+
+#navbarlink p {
+  margin-top: 12px;
 }
 
 #navbarlink a{
