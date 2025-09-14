@@ -254,19 +254,38 @@
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: #2c529e;
+  background-image: none;
+  background-color: transparent;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  border: 2px solid black;
+  width: 100px;
+  height: 100px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.carousel-control-prev:hover .carousel-control-prev-icon,
-.carousel-control-next:hover .carousel-control-next-icon {
-  background-color: #3970df;
-  transition: 0.5s ease-in-out;
-  transition: opacity 0.5s cubic-bezier(0.77, 0, 0.175, 1) 80ms,
-    transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) 80ms;
+.carousel-control-prev-icon::before,
+.carousel-control-next-icon::before {
+  content: none;
+}
+
+.carousel-control-prev-icon {
+  transform: rotate(180deg);
+}
+
+.carousel-svg-icon {
+  width: 80px;
+  height: 80px;
+  transition: all 0.3s ease;
+  opacity: 0.8;
+}
+
+.carousel-control-prev:hover .carousel-svg-icon,
+.carousel-control-next:hover .carousel-svg-icon {
+  transform: scale(1.1);
+  opacity: 1;
+  filter: drop-shadow(1px 1px 1px #96c1d3) saturate(1.5) contrast(1.2);
 }
 
 .galeriecolor {
