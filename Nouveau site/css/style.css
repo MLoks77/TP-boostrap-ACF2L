@@ -32,6 +32,7 @@
 
 #btnaccueil a{
   background-color: rgb(255, 255, 255);
+  transition: 0.5s;
 }
 
 #navbarlink p:hover {
