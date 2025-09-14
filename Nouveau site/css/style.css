@@ -1,15 +1,15 @@
-#landing{
-    background-image: url(../images/skyblue.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 75vh;
-    width: 100%;
-    position: relative;
-    z-index: 1;    
+#landing {
+  background-image: url(../images/skyblue.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  width: 100%;
+  position: relative;
+  z-index: 1;
 }
 
-#accueil{
+#accueil {
   background-image: url(../images/bandeauULM.png);
   background-size: cover;
   background-position: center;
@@ -17,26 +17,26 @@
   height: 20vh;
   width: 100%;
   position: relative;
-  z-index: 1;    
+  z-index: 1;
 }
 
-.bg-site{
-    background-color:#2c529e;
+.bg-site {
+  background-color: #2c529e;
 }
 
-#btnaccueil a:hover{
+#btnaccueil a:hover {
   background-color: rgb(238, 247, 255);
   transition: 0.5s;
   translate: 2px -3px;
 }
 
-#btnaccueil a{
+#btnaccueil a {
   background-color: rgb(255, 255, 255);
   transition: 0.5s;
 }
 
 #navbarlink p:hover {
-  color : rgb(214, 214, 214);
+  color: rgb(214, 214, 214);
   transition: 0.5s;
 }
 
@@ -44,7 +44,7 @@
   margin-top: 12px;
 }
 
-#navbarlink a{
+#navbarlink a {
   font-size: 16px;
   text-shadow: 1px 1px 2px black;
 }
@@ -53,15 +53,15 @@
   z-index: 1050;
   position: sticky;
   top: 0;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-#landing h1{
+#landing h1 {
   font-size: 55px;
-  text-shadow: 1px 1px 2px black
+  text-shadow: 1px 1px 2px black;
 }
 
-#landing p{
+#landing p {
   font-size: 4vh;
   text-shadow: 1px 1px 2px black;
 }
@@ -87,7 +87,7 @@
   transition: 0.2s;
 }
 
-#backToTop:hover{
+#backToTop:hover {
   background-color: #7ba7b9;
   transition: 0.2s;
 }
@@ -104,25 +104,24 @@
 
 /*Divider*/
 
-
 .custom-shape-divider-top-1757686462 {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
 }
 
 .custom-shape-divider-top-1757686462 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 80px;
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 80px;
 }
 
 .custom-shape-divider-top-1757686462 .shape-fill {
-    fill: #2c529e;
+  fill: #2c529e;
 }
 
 /*findivider*/
@@ -130,97 +129,189 @@
 /*Ce bouton provient du site UIverse*/
 
 .styled-wrapper .button {
-    display: block;
-    position: relative;
-    width: 76px;
-    height: 76px;
-    margin: 0;
-    overflow: hidden;
-    outline: none;
-    background-color: transparent;
-    cursor: pointer;
-    border: 0;
-  }
-  
-  .styled-wrapper .button:before {
-    content: "";
-    position: absolute;
-    border-radius: 50%;
-    inset: 7px;
-    border: 3px solid white;
-    transition:
-      opacity 0.4s cubic-bezier(0.77, 0, 0.175, 1) 80ms,
-      transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) 80ms;
-  }
-  
-  .styled-wrapper .button:after {
-    content: "";
-    position: absolute;
-    border-radius: 50%;
-    inset: 7px;
-    border: 4px solid #599a53;
-    transform: scale(1.3);
-    transition:
-      opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
-      transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    opacity: 0;
-  }
-  
-  .styled-wrapper .button:hover:before,
-  .styled-wrapper .button:focus:before {
-    opacity: 0;
-    transform: scale(0.7);
-    transition:
-      opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
-      transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  }
-  
-  .styled-wrapper .button:hover:after,
-  .styled-wrapper .button:focus:after {
-    opacity: 1;
-    transform: scale(1);
-    transition:
-      opacity 0.4s cubic-bezier(0.77, 0, 0.175, 1) 80ms,
-      transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) 80ms;
-  }
-  
-  .styled-wrapper .button-box {
-    display: flex;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  
-  .styled-wrapper .button-elem {
-    display: block;
-    width: 30px;
-    height: 30px;
-    margin: 24px 18px 0 22px;
-    transform: rotate(360deg);
-    fill: #f0eeef;
-  }
-  
-  .styled-wrapper .button:hover .button-box,
-  .styled-wrapper .button:focus .button-box {
-    transition: 0.4s;
-    transform: translateX(-69px);
-  }
-  
-  /*Ce bouton provient du site UIverse*/
+  display: block;
+  position: relative;
+  width: 76px;
+  height: 76px;
+  margin: 0;
+  overflow: hidden;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  border: 0;
+}
 
-  /*partie media*/
+.styled-wrapper .button:before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  inset: 7px;
+  border: 3px solid white;
+  transition: opacity 0.4s cubic-bezier(0.77, 0, 0.175, 1) 80ms,
+    transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) 80ms;
+}
 
-  @media (max-width: 768px) {
-    #navbarlink a {
-      font-size: 13px;
-    }
+.styled-wrapper .button:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  inset: 7px;
+  border: 4px solid #599a53;
+  transform: scale(1.3);
+  transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
+    transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  opacity: 0;
+}
 
-    #landing h1{
-      font-size: 35px;
-    }
-    
-    #landing p{
-      font-size: 2vh;
-      text-shadow: 1px 1px 2px black;
-    }
+.styled-wrapper .button:hover:before,
+.styled-wrapper .button:focus:before {
+  opacity: 0;
+  transform: scale(0.7);
+  transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
+    transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.styled-wrapper .button:hover:after,
+.styled-wrapper .button:focus:after {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.4s cubic-bezier(0.77, 0, 0.175, 1) 80ms,
+    transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) 80ms;
+}
+
+.styled-wrapper .button-box {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.styled-wrapper .button-elem {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 24px 18px 0 22px;
+  transform: rotate(360deg);
+  fill: #f0eeef;
+}
+
+.styled-wrapper .button:hover .button-box,
+.styled-wrapper .button:focus .button-box {
+  transition: 0.4s;
+  transform: translateX(-69px);
+}
+
+/*Ce bouton provient du site UIverse*/
+
+/* CSS pour carousel bootstrap */
+
+.carousel-inner {
+  width: 60%;
+  height: 5%;
+  overflow: hidden;
+  margin: auto;
+  border-radius: 15px;
+  background-color: #2c529e;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.carousel-indicators {
+  color: #000000;
+  margin: auto;
+}
+
+.carousel-item img {
+  max-height: 400px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.carousel-caption {
+  position: absolute;
+  left: 0;
+  right: auto;
+  bottom: 20px;
+  text-align: left;
+  object-position: top;
+  background-color: transparent;
+  background-color: #3970df;
+  padding: 15px;
+  border-radius: 15px;
+  max-width: 20%;
+  margin-left: 2%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Boutons de navigation du carousel */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 40%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #2c529e;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 2px solid black;
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+  background-color: #3970df;
+  transition: 0.5s ease-in-out;
+  transition: opacity 0.5s cubic-bezier(0.77, 0, 0.175, 1) 80ms,
+    transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) 80ms;
+}
+
+.galeriecolor {
+  background-color: #61849e;
+  padding: 40px;
+}
+/*partie media*/
+
+@media (max-width: 768px) {
+  #navbarlink a {
+    font-size: 13px;
   }
+
+  #landing h1 {
+    font-size: 35px;
+  }
+
+  #landing p {
+    font-size: 2vh;
+    text-shadow: 1px 1px 2px black;
+  }
+
+  /* Carousel bootstrap version mobile */
+  .carousel-inner {
+    width: 95%;
+    max-height: 250px;
+  }
+
+  .carousel-item img {
+    max-height: 250px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    margin: 0 auto;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 15%;
+  }
+}
