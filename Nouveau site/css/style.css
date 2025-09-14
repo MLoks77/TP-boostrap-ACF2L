@@ -78,6 +78,20 @@
   min-height: 2vh;
 }
 
+#backToTop {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 2;
+  background-color: #96c1d3;
+  transition: 0.2s;
+}
+
+#backToTop:hover{
+  background-color: #7ba7b9;
+  transition: 0.2s;
+}
+
 /* partie font */
 
 .sansation-light {
