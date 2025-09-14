@@ -50,22 +50,22 @@
 					<a href="#accueilancre"><img src="images/logo/logo2acf2l.png" width="50px" height="50px"
 							alt="Logo ACF2L"></a>
 					<nav class="navbar-nav d-flex flex-row justify-content-end mx-auto">
-						<a class="nav-link text-white mx-2 sansation-light" href="#accueilancre">
+						<a class="nav-link text-white mx-2 sansation-light" href="#accueil">
 							<p>Accueil</p>
 						</a>
-						<a class="nav-link text-white mx-2 sansation-light" href="#activiteancre">
+						<a class="nav-link text-white mx-2 sansation-light" href="#activite">
 							<p>Activités</p>
 						</a>
-						<a class="nav-link text-white mx-2 sansation-light" href="#ulmancre">
+						<a class="nav-link text-white mx-2 sansation-light" href="#ulm">
 							<p>Catégories d'ULM</p>
 						</a>
-						<a class="nav-link text-white mx-2 sansation-light" href="#moyensancre">
+						<a class="nav-link text-white mx-2 sansation-light" href="#moyens">
 							<p>Moyens Pédagogiques</p>
 						</a>
-						<a class="nav-link text-white mx-2 sansation-light" href="#galerieancre">
+						<a class="nav-link text-white mx-2 sansation-light" href="#galerie">
 							<p>Galerie</p>
 						</a>
-						<a class="nav-link text-white mx-2 sansation-light" href="#contactancre">
+						<a class="nav-link text-white mx-2 sansation-light" href="#contact">
 							<p>Contact</p>
 						</a>
 					</nav>
@@ -88,6 +88,7 @@
 									environnement
 									exceptionnel. Venez piloter un ULM dès maintenant !</p>
 								<div class="styled-wrapper">
+									<a href="#accueil">
 									<button class="button">
 										<div class="button-box">
 											<span class="button-elem">
@@ -108,6 +109,7 @@
 											</span>
 										</div>
 									</button>
+									</a>
 								</div>
 							</div>
 
@@ -121,25 +123,25 @@
 			<section class="container-fluid bg-site jump border-top border-light">
 				<div id="btnaccueil" class="row justify-content-center mt-5">
 					<div class="col-12 col-sm-6 col-md-2 text-center mb-2 d-flex justify-content-center">
-						<a href="#activiteancre"
+						<a href="#activite"
 							class="shadow border border-white text-dark rounded-pill px-2 px-sm-3 px-md-5 py-2 py-md-4 w-100 text-decoration-none">Activités</a>
 					</div>
 					<div class="col-12 col-sm-6 col-md-2 text-center mb-2 d-flex justify-content-center">
-						<a href="#ulmancre"
+						<a href="#ulm"
 							class="shadow border border-white text-dark rounded-pill px-2 px-sm-3 px-md-5 py-2 py-md-4 w-100 text-decoration-none">Catégories
 							d'ULM</a>
 					</div>
 					<div class="col-12 col-md-4 text-center mb-2 d-flex justify-content-center">
-						<a href="#moyensancre"
+						<a href="#moyens"
 							class="shadow border border-white text-dark rounded-pill px-2 px-sm-3 px-md-5 py-2 py-md-4 w-100 text-decoration-none">Moyens
 							Pédagogiques</a>
 					</div>
 					<div class="col-12 col-sm-6 col-md-2 text-center mb-2 d-flex justify-content-center">
-						<a href="#galerieancre"
+						<a href="#galerie"
 							class="shadow border border-white text-dark rounded-pill px-2 px-sm-3 px-md-5 py-2 py-md-4 w-100 text-decoration-none">Galerie</a>
 					</div>
 					<div class="col-12 col-sm-6 col-md-2 text-center mb-2 d-flex justify-content-center">
-						<a href="#contactancre"
+						<a href="#contact"
 							class="shadow border border-white text-dark rounded-pill px-2 px-sm-3 px-md-5 py-2 py-md-4 w-100 text-decoration-none">Contact</a>
 					</div>
 				</div>
@@ -238,38 +240,62 @@
 		<br>
 	</footer>
 	<!-- bouton permettant de revenir en haut de la page -->
-	<!--
-	<button id="backToTop" title="Retour en haut" class="btn btn-default position-fixed"
-		style="bottom: 2rem; right: 2rem; z-index: 1050; background-color: #5b5056; color: #fff; border-radius: 50%; padding: 12px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); display: none;">
+	<button id="backToTop" title="Retour en haut"
+		class="btn btn-secondary position-fixed rounded-circle p-3 shadow border-light"
+		style="display: none;">
 		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="margin:0;" fill="none" viewBox="0 0 24 24"
 			stroke="currentColor">
 			<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
 		</svg>
 	</button>
--->
 
 </body>
 
 </html>
-<!--
+<!-- btn pour revenir au top en mode smooth -->
 <script>
-	window.addEventListener('scroll', function () { // Afficher/Masquer le bouton selon le scroll
+	window.addEventListener('scroll', function () {
 		const btn = document.getElementById('backToTop');
 		if (window.scrollY > 300) {
-			btn.classList.remove('hidden');
+			btn.style.display = "block";
 		} else {
-			btn.classList.add('hidden');
+			btn.style.display = "none";
 		}
 	});
 	document.getElementById('backToTop').addEventListener('click', function () {
 		window.scrollTo({
 			top: 0,
-			behavior: 'smooth' // Scroll smooth vers le haut
+			behavior: 'smooth'
 		});
 	});
+</script>
+<!-- [ PROBLEME ] : LA NAVBAR CREE UN EFFET DE TROU BLANC TOUT EN HAUT SI ON RETOURNE AU TOP ASSEZ RAPIDEMENT. -->
+<script> 
+	const navbar = document.getElementById('navbarlink');
+	navbar.style.transition = "opacity 0.5s";
+	navbar.style.opacity = 0;
+	navbar.style.display = "none";
+
+	function AffichageNavbar() {
+		if (window.scrollY > 750) {
+			navbar.style.display = "block";
+			setTimeout(() => {
+				navbar.style.opacity = 1;
+			}, 10);
+		} else {
+			navbar.style.opacity = 0;
+			setTimeout(() => {
+				if (window.scrollY <= 750) {
+					navbar.style.display = "none";
+				}
+			}, 500);
+		}
+	}
+
+	window.addEventListener('scroll', AffichageNavbar);
+	window.addEventListener('DOMContentLoaded', AffichageNavbar);
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
 	integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
 	crossorigin="anonymous"></script>
--->
