@@ -36,7 +36,7 @@
 }
 
 #navbarlink p:hover {
-  color: rgb(214, 214, 214);
+  color: #96c1d3;
   transition: 0.5s;
 }
 
@@ -45,8 +45,7 @@
 }
 
 #navbarlink a {
-  font-size: 16px;
-  text-shadow: 1px 1px 2px black;
+  font-size: 18px;
 }
 
 #navbarlink {
