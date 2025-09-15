@@ -9,6 +9,12 @@
   z-index: 1;
 }
 
+h1 {
+  color: white;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
 #accueil {
   background-image: url(../images/bandeauULM.png);
   background-size: cover;
@@ -281,16 +287,28 @@
   opacity: 0.8;
 }
 
+.carousel-svg-icon path {
+  transition: fill 0.3s ease;
+}
+
 .carousel-control-prev:hover .carousel-svg-icon,
 .carousel-control-next:hover .carousel-svg-icon {
   transform: scale(1.1);
   opacity: 1;
-  filter: drop-shadow(1px 1px 1px #96c1d3) saturate(1.5) contrast(1.2);
+}
+
+.carousel-control-prev:hover .carousel-svg-icon path,
+.carousel-control-next:hover .carousel-svg-icon path {
+  fill: #96c1d3;
 }
 
 .galeriecolor {
   background-color: #61849e;
   padding: 40px;
+}
+
+.carousel-control-prev {
+  transform: rotate(180deg);
 }
 /*partie media*/
 
