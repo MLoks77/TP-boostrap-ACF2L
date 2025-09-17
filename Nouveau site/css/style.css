@@ -104,6 +104,17 @@ h1 {
   background-color: #7ba7b9;
   transition: 0.2s;
 }
+/*catégorie ULM*/
+
+ul {
+  color: white;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+ul + ul {
+  margin-top: 20px;
+}
 
 /* partie font */
 
@@ -174,6 +185,7 @@ h1 {
   display: block;
   width: calc(100% + 1.3px);
   height: 80px;
+  display: flex;
 }
 
 .custom-shape-divider-top-1757686462 .shape-fill {
@@ -353,15 +365,146 @@ h1 {
   fill: #96c1d3;
 }
 
+.carousel-control-prev {
+  transform: rotate(180deg);
+}
+
+/* Custom Cards Styles */
+.custom-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.custom-card:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.card-image {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.custom-card:hover .card-image img {
+  transform: scale(1.05);
+}
+
+.card-content {
+  padding: 0;
+}
+
+.card-header-custom {
+  padding: 15px 20px;
+  color: white;
+  font-weight: bold;
+  position: relative;
+}
+
+.card-header-custom h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.card-header-custom {
+  background-color: #2c529e;
+}
+
+.card-description {
+  padding: 20px;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.card-footer {
+  padding: 0 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-apply {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn {
+  background-color: #2c529e;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2c529e;
+}
+
+/* couleur des parties */
 .galeriecolor {
   background-color: #61849e;
   padding: 40px;
 }
 
-.carousel-control-prev {
-  transform: rotate(180deg);
+.colorulm {
+  background: linear-gradient(to top, #61639e 70%, #798244);
+  padding: 40px;
+  color: white;
+  min-height: 30vh;
 }
-/*partie media*/
+
+.ulm-category-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  height: 100%;
+  text-align: center;
+}
+
+.ulm-category-card:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-5px);
+}
+
+.ulm-category-card h3 {
+  color: white;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.ulm-category-card p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* partie media */
 
 @media (max-width: 768px) {
   #navbarlink a {
