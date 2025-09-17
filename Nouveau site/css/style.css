@@ -15,6 +15,14 @@ h1 {
   margin-bottom: 50px;
 }
 
+#contact {
+  background-color: #abc9e1;
+}
+
+#contourform {
+  background-color: #83a4be;
+}
+
 #accueil {
   background-image: url(../images/bandeauULM.png);
   background-size: cover;
@@ -108,6 +116,49 @@ h1 {
 /* partie font */
 
 /*Divider*/
+
+.custom-shape-divider-top-1758144650 {
+  position: relative;
+  margin: auto;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1758144650 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 120px;
+}
+
+.custom-shape-divider-top-1758144650 .shape-fill {
+  fill: #FFFFFF;
+}
+
+.custom-shape-divider-bottom-1758144190 {
+  position: relative;
+  margin: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1758144190 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 120px;
+}
+
+.custom-shape-divider-bottom-1758144190 .shape-fill {
+  fill: #FFFFFF;
+}
 
 .custom-shape-divider-top-1757686462 {
   position: relative;
