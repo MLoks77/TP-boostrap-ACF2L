@@ -11,12 +11,15 @@
 
 h1 {
   color: white;
-  text-align: center;
   margin-bottom: 50px;
 }
 
 #contact {
   background-color: #abc9e1;
+}
+
+#activites {
+  background-color: #61849e;
 }
 
 #contourform {
@@ -32,6 +35,10 @@ h1 {
   width: 100%;
   position: relative;
   z-index: 1;
+}
+
+.bg-site2 {
+  background-color:#61849e;
 }
 
 .bg-site {
@@ -104,6 +111,7 @@ h1 {
   background-color: #7ba7b9;
   transition: 0.2s;
 }
+
 /*catégorie ULM*/
 
 ul {
@@ -112,7 +120,7 @@ ul {
   line-height: 1.6;
 }
 
-ul + ul {
+ul+ul {
   margin-top: 20px;
 }
 
@@ -127,6 +135,28 @@ ul + ul {
 /* partie font */
 
 /*Divider*/
+
+.custom-shape-divider-bottom-1758149137 {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1758149137 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 87px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1758149137 .shape-fill {
+  fill: #83a4be;
+}
 
 .custom-shape-divider-top-1758144650 {
   position: relative;
@@ -356,13 +386,13 @@ ul + ul {
 
 .carousel-control-prev:hover .carousel-svg-icon,
 .carousel-control-next:hover .carousel-svg-icon {
-  transform: scale(1.1);
+  transform: scale(1.3);
   opacity: 1;
 }
 
 .carousel-control-prev:hover .carousel-svg-icon path,
 .carousel-control-next:hover .carousel-svg-icon path {
-  fill: #96c1d3;
+  fill: #000000;
 }
 
 .carousel-control-prev {
@@ -468,7 +498,7 @@ ul + ul {
 }
 
 .colorulm {
-  background: linear-gradient(to top, #61639e 70%, #798244);
+  background-color: #83a4be;
   padding: 40px;
   color: white;
   min-height: 30vh;
@@ -543,5 +573,24 @@ ul + ul {
   .carousel-control-prev,
   .carousel-control-next {
     width: 15%;
+  }
+
+  .carousel-control-prev .carousel-svg-icon,
+  .carousel-control-next .carousel-svg-icon {
+    transform: scale(1.3);
+    opacity: 1;
+  }
+
+  .carousel-control-prev {
+    left: -10px;
+  }
+
+  .carousel-control-next {
+    right: -10px;
+  }
+
+  .carousel-control-prev .carousel-svg-icon path,
+  .carousel-control-next .carousel-svg-icon path {
+    fill: #000000;
   }
 }
