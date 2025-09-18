@@ -38,7 +38,7 @@ h1 {
 }
 
 .bg-site2 {
-  background-color:#61849e;
+  background-color: #61849e;
 }
 
 .bg-site {
@@ -120,7 +120,7 @@ ul {
   line-height: 1.6;
 }
 
-ul+ul {
+ul + ul {
   margin-top: 20px;
 }
 
@@ -176,7 +176,7 @@ ul+ul {
 }
 
 .custom-shape-divider-top-1758144650 .shape-fill {
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 .custom-shape-divider-bottom-1758144190 {
@@ -198,7 +198,7 @@ ul+ul {
 }
 
 .custom-shape-divider-bottom-1758144190 .shape-fill {
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 .custom-shape-divider-top-1757686462 {
@@ -594,7 +594,7 @@ ul+ul {
     fill: #000000;
   }
 }
-=======
+
 #landing {
   background-image: url(../images/skyblue.jpg);
   background-size: cover;
@@ -794,4 +794,3 @@ ul+ul {
     font-size: 12px;
   }
 }
->>>>>>> Stashed changes
