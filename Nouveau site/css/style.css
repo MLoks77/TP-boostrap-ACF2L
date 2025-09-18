@@ -727,6 +727,12 @@ ul + ul {
   #activite .col-12.col-lg-4 {
     padding-left: 1rem;
   }
+
+  .aide,
+  .suivez {
+    margin-top: 2rem;
+    font-size: larger;
+  }
 }
 
 /* Responsive pour la section activité */
@@ -843,5 +849,18 @@ ul + ul {
     padding: 20px;
     border-radius: 50%;
     width: 45%;
+  }
+
+  .aide,
+  .suivez {
+    margin-top: 2rem;
+  }
+
+  .suivez h5 {
+    font-size: 150%;
+  }
+
+  .aide h5 {
+    font-size: 150%;
   }
 }
