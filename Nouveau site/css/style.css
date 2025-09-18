@@ -534,6 +534,12 @@ ul + ul {
   margin: 0;
 }
 
+.infocontainer {
+  display: flex;
+  width: 80%;
+  margin: auto;
+}
+
 /* partie media */
 
 @media (max-width: 768px) {
@@ -592,5 +598,30 @@ ul + ul {
   .carousel-control-prev .carousel-svg-icon path,
   .carousel-control-next .carousel-svg-icon path {
     fill: #000000;
+  }
+
+  .contact {
+    width: 100%;
+  }
+
+  .formulaire {
+    width: 100%;
+  }
+
+  /* Réorganisation contact/formulaire en mobile */
+  .infocontainer {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 95%;
+  }
+
+  .formulaire {
+    order: 2;
+    margin-bottom: 2rem;
+  }
+
+  .infos {
+    order: 1;
+    margin: auto;
   }
 }
