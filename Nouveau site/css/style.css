@@ -15,7 +15,7 @@ h1 {
 }
 
 #contact {
-  background-color: #abc9e1;
+  background: linear-gradient(180deg, #61849e 0%, #83a4be 100%);
 }
 
 #activites {
@@ -24,6 +24,7 @@ h1 {
 
 #contourform {
   background-color: #83a4be;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
 #accueil {
@@ -38,7 +39,7 @@ h1 {
 }
 
 .bg-site2 {
-  background-color: #61849e;
+  background: linear-gradient(135deg, #464f22 10%, #78a2c3 90%);
 }
 
 .bg-site {
@@ -509,7 +510,7 @@ ul + ul {
 }
 
 .colorulm {
-  background-color: #83a4be;
+  background: linear-gradient(180deg, #83a4be 0%, #61849e 100%);
   padding: 40px;
   color: white;
   min-height: 30vh;
@@ -565,6 +566,7 @@ ul + ul {
 .formations:hover,
 .nourriture:hover {
   border-radius: 20%;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
 .planning:hover {
@@ -606,6 +608,16 @@ ul + ul {
   font-size: 1.2rem !important;
 }
 
+/* Espacement entre les deux sections */
+#activite .col-12.col-lg-8 {
+  margin-bottom: 3rem;
+  padding-right: 3rem;
+}
+
+#activite .col-12.col-lg-4 {
+  padding-left: 3rem;
+}
+
 /* Surcharge des classes Bootstrap pour la section activité */
 #activite .fs-6,
 #activite .fs-md-5 {
@@ -625,6 +637,23 @@ ul + ul {
 #activite .fs-5,
 #activite .fs-md-4 {
   font-size: 1.7rem !important;
+}
+
+/* Section activités - icônes SVG rondes */
+#activite .rounded-circle {
+  width: 70px !important;
+  height: 70px !important;
+  min-width: 70px;
+  min-height: 70px;
+  border-radius: 50% !important;
+  flex-shrink: 0;
+}
+
+#activite .rounded-circle img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 /* Responsive pour la section activité */
@@ -672,6 +701,31 @@ ul + ul {
   #activite .fs-5,
   #activite .fs-md-4 {
     font-size: 1.4rem !important;
+  }
+
+  #activite .rounded-circle {
+    width: 60px !important;
+    height: 60px !important;
+    min-width: 60px;
+    min-height: 60px;
+    border-radius: 50% !important;
+  }
+
+  #activite .rounded-circle img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  /* Réduire l'espacement en mobile */
+  #activite .col-12.col-lg-8 {
+    margin-bottom: 2rem;
+    padding-right: 1rem;
+  }
+
+  #activite .col-12.col-lg-4 {
+    padding-left: 1rem;
   }
 }
 
@@ -788,6 +842,6 @@ ul + ul {
   .nourriture {
     padding: 20px;
     border-radius: 50%;
-    width: 43%;
+    width: 45%;
   }
 }
