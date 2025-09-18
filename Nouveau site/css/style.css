@@ -348,6 +348,14 @@ ul + ul {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
 }
 
+.carousel-caption h5 {
+  font-size: 1rem;
+}
+
+.carousel-caption p {
+  font-size: 0.85rem;
+}
+
 /* Boutons de navigation du carousel */
 .carousel-control-prev,
 .carousel-control-next {
