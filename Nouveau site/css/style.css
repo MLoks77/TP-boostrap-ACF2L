@@ -76,14 +76,17 @@ h1 {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-#landing h1 {
-  font-size: 55px;
-  text-shadow: 1px 1px 2px black;
+#landing h1,
+#landing h2 {
+  font-size: 65px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  line-height: 1.1;
 }
 
 #landing p {
-  font-size: 4vh;
-  text-shadow: 1px 1px 2px black;
+  font-size: 5vh;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  line-height: 1.3;
 }
 
 .mt-7 {
@@ -538,6 +541,125 @@ ul + ul {
   display: flex;
   width: 80%;
   margin: auto;
+}
+
+/* Section présentation de l'aéro-club */
+#activite h2 {
+  font-size: 2.5rem !important;
+}
+
+#activite h3 {
+  font-size: 2rem !important;
+}
+
+#activite h4 {
+  font-size: 1.7rem !important;
+}
+
+#activite p {
+  font-size: 1.3rem !important;
+  line-height: 1.6;
+}
+
+#activite ul {
+  font-size: 1.2rem !important;
+  line-height: 1.7;
+}
+
+#activite ul li {
+  font-size: 1.2rem !important;
+}
+
+/* Surcharge des classes Bootstrap pour la section activité */
+#activite .fs-6,
+#activite .fs-md-5 {
+  font-size: 1.3rem !important;
+}
+
+#activite .fs-3,
+#activite .fs-md-2 {
+  font-size: 2.5rem !important;
+}
+
+#activite .fs-4,
+#activite .fs-md-3 {
+  font-size: 2rem !important;
+}
+
+#activite .fs-5,
+#activite .fs-md-4 {
+  font-size: 1.7rem !important;
+}
+
+/* Responsive pour la section activité */
+@media (max-width: 768px) {
+  #activite h2 {
+    font-size: 2rem !important;
+  }
+
+  #activite h3 {
+    font-size: 1.6rem !important;
+  }
+
+  #activite h4 {
+    font-size: 1.4rem !important;
+  }
+
+  #activite p {
+    font-size: 1.1rem !important;
+  }
+
+  #activite ul {
+    font-size: 1rem !important;
+  }
+
+  #activite ul li {
+    font-size: 1rem !important;
+  }
+
+  /* Surcharge mobile des classes Bootstrap */
+  #activite .fs-6,
+  #activite .fs-md-5 {
+    font-size: 1.1rem !important;
+  }
+
+  #activite .fs-3,
+  #activite .fs-md-2 {
+    font-size: 2rem !important;
+  }
+
+  #activite .fs-4,
+  #activite .fs-md-3 {
+    font-size: 1.6rem !important;
+  }
+
+  #activite .fs-5,
+  #activite .fs-md-4 {
+    font-size: 1.4rem !important;
+  }
+}
+
+/* Responsive pour la section activité */
+@media (max-width: 768px) {
+  #activite h2 {
+    font-size: 2rem;
+  }
+
+  #activite h3 {
+    font-size: 1.6rem;
+  }
+
+  #activite h4 {
+    font-size: 1.4rem;
+  }
+
+  #activite p {
+    font-size: 1.1rem;
+  }
+
+  #activite ul {
+    font-size: 1rem;
+  }
 }
 
 /* partie media */
