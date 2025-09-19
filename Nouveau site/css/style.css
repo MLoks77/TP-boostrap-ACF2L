@@ -420,6 +420,10 @@ ul + ul {
   transform: rotate(180deg);
 }
 
+.pedagog {
+  margin-bottom: 5%;
+}
+
 /* Custom Cards Styles */
 .custom-card {
   background: rgba(255, 255, 255, 0.1);
