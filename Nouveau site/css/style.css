@@ -39,7 +39,7 @@ h1 {
 }
 
 .bg-site2 {
-  background: linear-gradient(135deg, #464f22 10%, #78a2c3 90%);
+  background: linear-gradient(180deg, #b6ae7e 10%, #83a4be 90%);
 }
 
 .bg-site {
@@ -263,6 +263,15 @@ ul + ul {
   transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
     transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   opacity: 0;
+}
+
+.ulm img {
+  width: fit-content;
+}
+
+.presentation {
+  text-align: left;
+  margin-top: 5%;
 }
 
 .styled-wrapper .button:hover:before,
@@ -862,5 +871,11 @@ ul + ul {
 
   .aide h5 {
     font-size: 150%;
+  }
+
+  .ulm,
+  .presentation {
+    width: 100%;
+    margin-top: 10%;
   }
 }
