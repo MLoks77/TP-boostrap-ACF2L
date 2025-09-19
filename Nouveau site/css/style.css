@@ -116,6 +116,25 @@ h1 {
   transition: 0.2s;
 }
 
+.ulm img {
+  width: fit-content;
+}
+
+.presentation {
+  text-align: left;
+  margin-top: 5%;
+}
+
+/* partie font */
+
+.sansation-light {
+  font-family: "Sansation", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/*fin partie font */
+
 /*catégorie ULM*/
 
 ul {
@@ -127,16 +146,6 @@ ul {
 ul + ul {
   margin-top: 20px;
 }
-
-/* partie font */
-
-.sansation-light {
-  font-family: "Sansation", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-/* partie font */
 
 /*Divider*/
 
@@ -265,14 +274,8 @@ ul + ul {
   opacity: 0;
 }
 
-.ulm img {
-  width: fit-content;
-}
 
-.presentation {
-  text-align: left;
-  margin-top: 5%;
-}
+
 
 .styled-wrapper .button:hover:before,
 .styled-wrapper .button:focus:before {
@@ -311,10 +314,10 @@ ul + ul {
   transition: 0.4s;
   transform: translateX(-69px);
 }
+/*fin du bouton UIverse*/
 
-/*Ce bouton provient du site UIverse*/
 
-/* CSS pour carousel bootstrap */
+/* css pour le carousel bootstrap dispo sur le site de bootstrap */
 
 .carousel-inner {
   width: 60%;
@@ -419,7 +422,7 @@ ul + ul {
 .carousel-control-prev {
   transform: rotate(180deg);
 }
-
+/* carousel fin CSS */
 .pedagog {
   margin-bottom: 5%;
 }
@@ -510,11 +513,6 @@ ul + ul {
   background-color: #2c529e;
 }
 
-.price {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #2c529e;
-}
 
 /* couleur des parties */
 .galeriecolor {
@@ -565,215 +563,16 @@ ul + ul {
   margin: auto;
 }
 
-.planning,
-.formations,
-.nourriture {
-  background-color: white;
-  padding: 30px;
-  border-radius: 50%;
-  width: 42%;
-  transition: 0.5s ease-in-out;
-}
+/* partie media */
 
-.planning:hover,
-.formations:hover,
-.nourriture:hover {
-  border-radius: 20%;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-}
-
-.planning:hover {
-  background-color: #ffc067;
-}
-
-.nourriture:hover {
-  background-color: #a9cbd7;
-}
-
-.formations:hover {
-  background-color: #ff6961;
-}
-
-/* Section présentation de l'aéro-club */
-#activite h2 {
-  font-size: 2.5rem !important;
-}
-
-#activite h3 {
-  font-size: 2rem !important;
-}
-
-#activite h4 {
-  font-size: 1.7rem !important;
-}
-
-#activite p {
-  font-size: 1.3rem !important;
-  line-height: 1.6;
-}
-
-#activite ul {
-  font-size: 1.2rem !important;
-  line-height: 1.7;
-}
-
-#activite ul li {
-  font-size: 1.2rem !important;
-}
-
-/* Espacement entre les deux sections */
-#activite .col-12.col-lg-8 {
-  margin-bottom: 3rem;
-  padding-right: 3rem;
-}
-
-#activite .col-12.col-lg-4 {
-  padding-left: 3rem;
-}
-
-/* Surcharge des classes Bootstrap pour la section activité */
-#activite .fs-6,
-#activite .fs-md-5 {
-  font-size: 1.3rem !important;
-}
-
-#activite .fs-3,
-#activite .fs-md-2 {
-  font-size: 2.5rem !important;
-}
-
-#activite .fs-4,
-#activite .fs-md-3 {
-  font-size: 2rem !important;
-}
-
-#activite .fs-5,
-#activite .fs-md-4 {
-  font-size: 1.7rem !important;
-}
-
-/* Section activités - icônes SVG rondes */
-#activite .rounded-circle {
-  width: 70px !important;
-  height: 70px !important;
-  min-width: 70px;
-  min-height: 70px;
-  border-radius: 50% !important;
-  flex-shrink: 0;
-}
-
-#activite .rounded-circle img {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover;
-  border-radius: 50%;
-}
-
-/* Responsive pour la section activité */
 @media (max-width: 768px) {
-  #activite h2 {
-    font-size: 2rem !important;
-  }
-
-  #activite h3 {
-    font-size: 1.6rem !important;
-  }
-
-  #activite h4 {
-    font-size: 1.4rem !important;
-  }
-
-  #activite p {
-    font-size: 1.1rem !important;
-  }
-
-  #activite ul {
-    font-size: 1rem !important;
-  }
-
-  #activite ul li {
-    font-size: 1rem !important;
-  }
-
-  /* Surcharge mobile des classes Bootstrap */
-  #activite .fs-6,
-  #activite .fs-md-5 {
-    font-size: 1.1rem !important;
-  }
-
-  #activite .fs-3,
-  #activite .fs-md-2 {
-    font-size: 2rem !important;
-  }
-
-  #activite .fs-4,
-  #activite .fs-md-3 {
-    font-size: 1.6rem !important;
-  }
-
-  #activite .fs-5,
-  #activite .fs-md-4 {
-    font-size: 1.4rem !important;
-  }
-
-  #activite .rounded-circle {
-    width: 60px !important;
-    height: 60px !important;
-    min-width: 60px;
-    min-height: 60px;
-    border-radius: 50% !important;
-  }
-
-  #activite .rounded-circle img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover;
-    border-radius: 50%;
-  }
-
-  /* Réduire l'espacement en mobile */
-  #activite .col-12.col-lg-8 {
-    margin-bottom: 2rem;
-    padding-right: 1rem;
-  }
-
-  #activite .col-12.col-lg-4 {
-    padding-left: 1rem;
-  }
 
   .aide,
   .suivez {
     margin-top: 2rem;
     font-size: larger;
   }
-}
 
-/* Responsive pour la section activité */
-@media (max-width: 768px) {
-  #activite h2 {
-    font-size: 2rem;
-  }
-
-  #activite h3 {
-    font-size: 1.6rem;
-  }
-
-  #activite h4 {
-    font-size: 1.4rem;
-  }
-
-  #activite p {
-    font-size: 1.1rem;
-  }
-
-  #activite ul {
-    font-size: 1rem;
-  }
-}
-
-/* partie media */
-
-@media (max-width: 768px) {
   #navbarlink a {
     font-size: 13px;
   }
@@ -854,14 +653,6 @@ ul + ul {
   .infos {
     order: 1;
     margin: auto;
-  }
-
-  .planning,
-  .formations,
-  .nourriture {
-    padding: 20px;
-    border-radius: 50%;
-    width: 45%;
   }
 
   .aide,

@@ -51,9 +51,6 @@
           <a href="#accueilancre"><img src="images/logo/logo2acf2l.png" width="50px" height="50px"
               alt="Logo ACF2L" /></a>
           <nav class="navbar-nav d-flex flex-row justify-content-end mx-auto">
-            <a class="nav-link text-white mx-2 sansation-light" href="#accueil">
-              <p>Accueil</p>
-            </a>
             <a class="nav-link text-white mx-2 sansation-light" href="#activite">
               <p>Activités</p>
             </a>
@@ -152,10 +149,11 @@
     <section id="activite" class="container-fluid p-3 p-md-4">
       <div class="row">
         <!-- Section présentation -->
-        <div class="">
-          <section class="row align-items-center">
+        <div>
+          <section class="row align-items-center text-center">
             <div class="ulm col-6">
               <img src="images/ulm.jpg" alt="Photo de l'aéroclub" class="img-fluid rounded shadow-lg w-200" style="max-height: 500px; object-fit: cover;">
+              <p class=" fw-light text-light mt-2"><em>image d'illustration pixabay</em></p>
             </div>
             <div class="presentation text-white col-6">
               <div class="border-start border-4 border-light ps-5">
@@ -203,6 +201,7 @@
         <div class="col-md-6 col-lg-4">
           <div class="ulm-category-card">
             <h3>1. Le paramoteur</h3>
+            <p>Un parapente équipé d’un moteur léger, idéal pour voler en toute liberté.</p>
           </div>
         </div>
 
@@ -210,6 +209,7 @@
         <div class="col-md-6 col-lg-4">
           <div class="ulm-category-card">
             <h3>2. Le pendulaire</h3>
+            <p>Un ULM à aile delta contrôlé par déplacement du corps, simple et sensationnel.</p>
           </div>
         </div>
 
@@ -217,6 +217,7 @@
         <div class="col-md-6 col-lg-4">
           <div class="ulm-category-card">
             <h3>3. Le multiaxes</h3>
+            <p>Petit avion ultraléger avec cockpit fermé, stable et confortable.</p>
           </div>
         </div>
 
@@ -224,6 +225,7 @@
         <div class="col-md-6 col-lg-4">
           <div class="ulm-category-card">
             <h3>4. L'autogire ultraléger</h3>
+            <p>Appareil à rotor libre offrant un vol sûr et maniable.</p>
           </div>
         </div>
 
@@ -231,6 +233,7 @@
         <div class="col-md-6 col-lg-4">
           <div class="ulm-category-card">
             <h3>5. L'aérostat ultraléger</h3>
+            <p>Montgolfière compacte pour une expérience aérienne douce et paisible.</p>
           </div>
         </div>
 
@@ -238,6 +241,7 @@
         <div class="col-md-6 col-lg-4">
           <div class="ulm-category-card">
             <h3>6. L'hélicoptère ultraléger</h3>
+            <p>Mini-hélico agile permettant un vol précis et flexible.</p>
             <section id="moyens"><!-- ancre nos moyens -->
     </section>
           </div>
@@ -308,7 +312,7 @@
                   </p>
                 </div>
                 <div class="card-footer">
-                  <span class="price orange-price">67€</span>
+                  <span class="text-light fs-2">67€</span>
                 </div>
               </div>
             </div>
@@ -333,7 +337,7 @@
                   </p>
                 </div>
                 <div class="card-footer">
-                  <span class="price blue-price">110€</span>
+                  <span class="text-light fs-2#">110€</span>
                 </div>
               </div>
             </div>
@@ -359,7 +363,7 @@
                   </p>
                 </div>
                 <div class="card-footer">
-                  <span class="price green-price">193€</span>
+                  <span class="text-light fs-2">193€</span>
                 </div>
                 <section id="galerie"></section><!-- c'est l'ancre, ne pas enlever -->
               </div>
@@ -605,12 +609,11 @@
   });
   document.getElementById("backToTop").addEventListener("click", function () {
     window.scrollTo({
-      top: 0,
+      top: document.getElementById("accueilancre").offsetTop,
       behavior: "smooth",
     });
   });
 </script>
-<!-- [ PROBLEME ] : LA NAVBAR CREE UN EFFET DE TROU BLANC TOUT EN HAUT SI ON RETOURNE AU TOP ASSEZ RAPIDEMENT. -->
 <script>
   const navbar = document.getElementById("navbarlink");
   navbar.style.transition = "opacity 0.5s";
