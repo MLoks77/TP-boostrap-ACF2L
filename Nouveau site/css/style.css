@@ -15,7 +15,7 @@ h1 {
 }
 
 #contact {
-  background-color: #abc9e1;
+  background: linear-gradient(180deg, #61849e 0%, #83a4be 100%);
 }
 
 #activites {
@@ -24,6 +24,7 @@ h1 {
 
 #contourform {
   background-color: #83a4be;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
 #accueil {
@@ -38,7 +39,7 @@ h1 {
 }
 
 .bg-site2 {
-  background-color:#61849e;
+  background: linear-gradient(180deg, #b6ae7e 10%, #83a4be 90%);
 }
 
 .bg-site {
@@ -76,14 +77,17 @@ h1 {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-#landing h1 {
-  font-size: 55px;
-  text-shadow: 1px 1px 2px black;
+#landing h1,
+#landing h2 {
+  font-size: 65px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  line-height: 1.1;
 }
 
 #landing p {
-  font-size: 4vh;
-  text-shadow: 1px 1px 2px black;
+  font-size: 5vh;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  line-height: 1.3;
 }
 
 .mt-7 {
@@ -112,16 +116,13 @@ h1 {
   transition: 0.2s;
 }
 
-/*catégorie ULM*/
-
-ul {
-  color: white;
-  font-size: 20px;
-  line-height: 1.6;
+.ulm img {
+  width: fit-content;
 }
 
-ul+ul {
-  margin-top: 20px;
+.presentation {
+  text-align: left;
+  margin-top: 5%;
 }
 
 /* partie font */
@@ -132,7 +133,19 @@ ul+ul {
   font-style: normal;
 }
 
-/* partie font */
+/*fin partie font */
+
+/*catégorie ULM*/
+
+ul {
+  color: white;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+ul + ul {
+  margin-top: 20px;
+}
 
 /*Divider*/
 
@@ -176,7 +189,7 @@ ul+ul {
 }
 
 .custom-shape-divider-top-1758144650 .shape-fill {
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 .custom-shape-divider-bottom-1758144190 {
@@ -198,7 +211,7 @@ ul+ul {
 }
 
 .custom-shape-divider-bottom-1758144190 .shape-fill {
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 .custom-shape-divider-top-1757686462 {
@@ -261,6 +274,9 @@ ul+ul {
   opacity: 0;
 }
 
+
+
+
 .styled-wrapper .button:hover:before,
 .styled-wrapper .button:focus:before {
   opacity: 0;
@@ -298,10 +314,10 @@ ul+ul {
   transition: 0.4s;
   transform: translateX(-69px);
 }
+/*fin du bouton UIverse*/
 
-/*Ce bouton provient du site UIverse*/
 
-/* CSS pour carousel bootstrap */
+/* css pour le carousel bootstrap dispo sur le site de bootstrap */
 
 .carousel-inner {
   width: 60%;
@@ -343,6 +359,14 @@ ul+ul {
   max-width: 20%;
   margin-left: 2%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.carousel-caption h5 {
+  font-size: 1rem;
+}
+
+.carousel-caption p {
+  font-size: 0.85rem;
 }
 
 /* Boutons de navigation du carousel */
@@ -397,6 +421,10 @@ ul+ul {
 
 .carousel-control-prev {
   transform: rotate(180deg);
+}
+/* carousel fin CSS */
+.pedagog {
+  margin-bottom: 5%;
 }
 
 /* Custom Cards Styles */
@@ -485,11 +513,6 @@ ul+ul {
   background-color: #2c529e;
 }
 
-.price {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #2c529e;
-}
 
 /* couleur des parties */
 .galeriecolor {
@@ -498,7 +521,7 @@ ul+ul {
 }
 
 .colorulm {
-  background-color: #83a4be;
+  background: linear-gradient(180deg, #83a4be 0%, #61849e 100%);
   padding: 40px;
   color: white;
   min-height: 30vh;
@@ -534,9 +557,22 @@ ul+ul {
   margin: 0;
 }
 
+.infocontainer {
+  display: flex;
+  width: 80%;
+  margin: auto;
+}
+
 /* partie media */
 
 @media (max-width: 768px) {
+
+  .aide,
+  .suivez {
+    margin-top: 2rem;
+    font-size: larger;
+  }
+
   #navbarlink a {
     font-size: 13px;
   }
@@ -592,5 +628,49 @@ ul+ul {
   .carousel-control-prev .carousel-svg-icon path,
   .carousel-control-next .carousel-svg-icon path {
     fill: #000000;
+  }
+
+  .contact {
+    width: 100%;
+  }
+
+  .formulaire {
+    width: 100%;
+  }
+
+  /* Réorganisation contact/formulaire en mobile */
+  .infocontainer {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 95%;
+  }
+
+  .formulaire {
+    order: 2;
+    margin-bottom: 2rem;
+  }
+
+  .infos {
+    order: 1;
+    margin: auto;
+  }
+
+  .aide,
+  .suivez {
+    margin-top: 2rem;
+  }
+
+  .suivez h5 {
+    font-size: 150%;
+  }
+
+  .aide h5 {
+    font-size: 150%;
+  }
+
+  .ulm,
+  .presentation {
+    width: 100%;
+    margin-top: 10%;
   }
 }

@@ -51,9 +51,6 @@
           <a href="#accueilancre"><img src="images/logo/logo2acf2l.png" width="50px" height="50px"
               alt="Logo ACF2L" /></a>
           <nav class="navbar-nav d-flex flex-row justify-content-end mx-auto">
-            <a class="nav-link text-white mx-2 sansation-light" href="#accueil">
-              <p>Accueil</p>
-            </a>
             <a class="nav-link text-white mx-2 sansation-light" href="#activite">
               <p>Activités</p>
             </a>
@@ -75,25 +72,24 @@
     </div>
   </navbar>
 
+  <!-- Header avec navigation -->
   <header>
     <section id="accueilancre">
       <div class="container-fluid">
         <div class="row">
-          <div id="landing" class="col-md-9">
-            <!--presentation dans le landing-->
-            <article class="text-white p-3">
-              <div class="mt-7 pl-3">
-                <h2>
+          <div id="landing" class="col-12">
+            <article class="text-white p-3 p-md-5">
+              <div class="mt-4 mt-md-7 text-center text-md-start">
+                <h2 class="fs-3 fs-md-1">
                   Bienvenue sur le site de <br />l'Aéro-Club de
                   Frotey-Les-Lures
                 </h2>
-                <p>
+                <p class="fs-6 fs-md-4">
                   L'aviation vous offre la chance de pratiquer l'aviation
-                  légère<br />
-                  dans un environnement exceptionnel. Venez piloter un ULM dès
+                  légère dans un environnement exceptionnel. Venez piloter un ULM dès
                   maintenant !
                 </p>
-                <div class="styled-wrapper">
+                <div class="styled-wrapper d-flex justify-content-center justify-content-md-start">
                   <a href="#accueil">
                     <button class="button">
                       <div class="button-box">
@@ -114,34 +110,26 @@
               </div>
             </article>
           </div>
-          <div class="col-md-3">
-            <!-- ne rien mettre-->
-          </div>
         </div>
       </div>
+      
+      <!-- Boutons de navigation -->
       <section class="container-fluid bg-site jump border-top border-light">
-        <div id="btnaccueil" class="row justify-content-center mt-5">
-          <div class="col-12 col-sm-6 col-md-2 text-center mb-2 d-flex justify-content-center">
-            <a href="#activite"
-              class="shadow border border-white text-dark rounded-pill px-2 px-sm-3 px-md-5 py-2 py-md-4 w-100 text-decoration-none">Activités</a>
+        <div id="btnaccueil" class="row justify-content-center mt-3 mt-md-5 px-2">
+          <div class="col-6 col-sm-4 col-md-2 text-center mb-3 mb-md-2">
+            <a href="#activite" class="shadow border border-white text-dark rounded-pill px-2 px-sm-3 px-md-5 py-2 py-md-4 w-100 text-decoration-none d-block">Activités</a>
           </div>
-          <div class="col-12 col-sm-6 col-md-2 text-center mb-2 d-flex justify-content-center">
-            <a href="#ulm"
-              class="shadow border border-white text-dark rounded-pill px-2 px-sm-3 px-md-5 py-2 py-md-4 w-100 text-decoration-none">Catégories
-              d'ULM</a>
+          <div class="col-6 col-sm-4 col-md-2 text-center mb-3 mb-md-2">
+            <a href="#ulm" class="shadow border border-white text-dark rounded-pill px-2 px-sm-3 px-md-5 py-2 py-md-4 w-100 text-decoration-none d-block">Catégories d'ULM</a>
           </div>
-          <div class="col-12 col-md-4 text-center mb-2 d-flex justify-content-center">
-            <a href="#moyens"
-              class="shadow border border-white text-dark rounded-pill px-2 px-sm-3 px-md-5 py-2 py-md-4 w-100 text-decoration-none">Moyens
-              Pédagogiques</a>
+          <div class="col-12 col-sm-4 col-md-4 text-center mb-3 mb-md-2">
+            <a href="#moyens" class="shadow border border-white text-dark rounded-pill px-2 px-sm-3 px-md-5 py-2 py-md-4 w-100 text-decoration-none d-block">Moyens Pédagogiques</a>
           </div>
-          <div class="col-12 col-sm-6 col-md-2 text-center mb-2 d-flex justify-content-center">
-            <a href="#galerie"
-              class="shadow border border-white text-dark rounded-pill px-2 px-sm-3 px-md-5 py-2 py-md-4 w-100 text-decoration-none">Galerie</a>
+          <div class="col-6 col-sm-6 col-md-2 text-center mb-3 mb-md-2">
+            <a href="#galerie" class="shadow border border-white text-dark rounded-pill px-2 px-sm-3 px-md-5 py-2 py-md-4 w-100 text-decoration-none d-block">Galerie</a>
           </div>
-          <div class="col-12 col-sm-6 col-md-2 text-center mb-2 d-flex justify-content-center">
-            <a href="#contact"
-              class="shadow border border-white text-dark rounded-pill px-2 px-sm-3 px-md-5 py-2 py-md-4 w-100 text-decoration-none">Contact</a>
+          <div class="col-6 col-sm-6 col-md-2 text-center mb-3 mb-md-2">
+            <a href="#contact" class="shadow border border-white text-dark rounded-pill px-2 px-sm-3 px-md-5 py-2 py-md-4 w-100 text-decoration-none d-block">Contact</a>
           </div>
         </div>
         <br />
@@ -158,70 +146,52 @@
   </section>
   <!-- fin accueil -->
   <section class="bg-site2">
-    <section id="activite" class="container-fluid mb-5 border-top border-light p-2">
-
-      <section class="row">
-
-        <div class="col-8 ml-5 fs-4">
-          <section>
-            <h2 class="mb-3">Présentation de l’aéro-club</h2>
-            <p>
-              L’aéro-club est une <strong>Association Loi 1901</strong>, agréée Jeunesse et Sports, et adhérente à la
-              <abbr title="Fédération Française d’ULM">FFULM</abbr>.<br>
-              <span class="d-block mt-2">Association enregistrée n°04674 - Agrément n° AS70986858</span>
-              <span class="d-block">Siège social : 62, Avenue de la République, 70200 Lure</span>
-            </p>
-            <hr>
-            <h3 class="mt-4">Nos missions principales</h3>
-            <ul>
-              <li>Formation de pilotes et d’instructeurs</li>
-              <li>Baptêmes de l’air</li>
-            </ul>
-            <h4 class="mt-4">Prestations complémentaires</h4>
-            <ul>
-              <li>Maintenance des ULM : moteur, structure…</li>
-              <li>Montage des ULM et de tout instrument de navigation : compas, radio, transpondeur…</li>
-              <li>Service de restauration rapide</li>
-              <li>Hébergement : trois studios et six chambres pour les élèves stagiaires</li>
-              <li>Location d’emplacement ULM dans des hangars pour les particuliers</li>
-            </ul>
+    <section id="activite" class="container-fluid p-3 p-md-4">
+      <div class="row">
+        <!-- Section présentation -->
+        <div>
+          <section class="row align-items-center text-center">
+            <div class="ulm col-6">
+              <img src="images/ulm.jpg" alt="Photo de l'aéroclub" class="img-fluid rounded shadow-lg w-200" style="max-height: 500px; object-fit: cover;">
+              <p class=" fw-light text-light mt-2"><em>image d'illustration pixabay</em></p>
+            </div>
+            <div class="presentation text-white col-6">
+              <div class="border-start border-4 border-light ps-5">
+          <h1 class="fs-1 fw-bold">Présentation de l'aéro-club</h1>
+          </div>
+             <p class="fst-italic">
+                L'aéro-club est une <strong>Association Loi 1901</strong>, agréée Jeunesse et Sports, et adhérente à la
+                Fédération Française d'ULM
+                <span class="d-block mt-2">Association enregistrée n°04674 - Agrément n° AS70986858</span>
+                <span class="d-block">Siège social : 62, Avenue de la République, 70200 Lure</span>
+              </p>
+              <hr class="border-white">
+              <h3 class="mt-4 fs-4">Nos missions principales</h3>
+              <ul class="fs-5">
+                <li>Formation de pilotes et d'instructeurs</li>
+                <li>Baptêmes de l'air</li>
+              </ul>
+              <h4 class="mt-4 fs-5">Prestations complémentaires</h4>
+              <ul class="fs-5">
+                <li>Maintenance des ULM : moteur, structure…</li>
+                <li>Montage des ULM et de tout instrument de navigation : compas, radio, transpondeur…</li>
+                <li>Service de restauration rapide</li>
+                <li>Hébergement : trois studios et six chambres pour les élèves stagiaires</li>
+                <li>Location d'emplacement ULM dans des hangars pour les particuliers</li>
+              </ul>
+            </div>
           </section>
         </div>
-        <!-- partie droite -->
-        <div class="col-4">
-          <h1 class="text-center">Nos Activités</h1>
-
-          <div class="d-flex flex-column align-items-center text-center gap-4">
-            <div>
-              <img src="images/svg/food.svg" alt="Logo de stand de nourriture" width="90px" height="90px"
-                class="rounded-circle border border-dark p-2 bg-white">
-              <p class="mt-2 text-center">Excellente nourriture</p>
-            </div>
-            <div>
-              <img src="images/svg/chrono.svg" alt="Logo d'un chronomètre de compétition" width="90px" height="90px"
-                class="rounded-circle border border-dark p-2 bg-white">
-              <p class="mt-2 text-center">Leçons de musique</p>
-            </div>
-            <div>
-              <img src="images/svg/calendar.svg" alt="logo d'un calendrier" width="90px" height="90px"
-                class="rounded-circle border border-dark p-2 bg-white">
-              <section id="ulm"></section><!-- ancre ULM -->
-              <p class="mt-2 text-center">Service de bus</p>
-            </div>
-          </div>
+        
+        <!-- Section activités -->
+        
         </div>
-
-      </section>
+      </div>
     </section>
-    <div class="custom-shape-divider-bottom-1758149137">
-      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
-      </svg>
-    </div>
   </section>
 
   <!-- ULM -->
-  <section class="colorulm">
+  <section id="ulm" class="colorulm">
     <div class="container-fluid p-5">
 
       <h1 class="text-center mb-5">Catégories d'ULM</h1>
@@ -231,6 +201,7 @@
         <div class="col-md-6 col-lg-4">
           <div class="ulm-category-card">
             <h3>1. Le paramoteur</h3>
+            <p>Un parapente équipé d’un moteur léger, idéal pour voler en toute liberté.</p>
           </div>
         </div>
 
@@ -238,6 +209,7 @@
         <div class="col-md-6 col-lg-4">
           <div class="ulm-category-card">
             <h3>2. Le pendulaire</h3>
+            <p>Un ULM à aile delta contrôlé par déplacement du corps, simple et sensationnel.</p>
           </div>
         </div>
 
@@ -245,6 +217,7 @@
         <div class="col-md-6 col-lg-4">
           <div class="ulm-category-card">
             <h3>3. Le multiaxes</h3>
+            <p>Petit avion ultraléger avec cockpit fermé, stable et confortable.</p>
           </div>
         </div>
 
@@ -252,6 +225,7 @@
         <div class="col-md-6 col-lg-4">
           <div class="ulm-category-card">
             <h3>4. L'autogire ultraléger</h3>
+            <p>Appareil à rotor libre offrant un vol sûr et maniable.</p>
           </div>
         </div>
 
@@ -259,6 +233,7 @@
         <div class="col-md-6 col-lg-4">
           <div class="ulm-category-card">
             <h3>5. L'aérostat ultraléger</h3>
+            <p>Montgolfière compacte pour une expérience aérienne douce et paisible.</p>
           </div>
         </div>
 
@@ -266,16 +241,20 @@
         <div class="col-md-6 col-lg-4">
           <div class="ulm-category-card">
             <h3>6. L'hélicoptère ultraléger</h3>
+            <p>Mini-hélico agile permettant un vol précis et flexible.</p>
+            <section id="moyens"><!-- ancre nos moyens -->
+    </section>
           </div>
         </div>
+        
       </div>
+      
     </div>
     <!-- fin de colone ULM -->
-    <section id="moyens"><!-- ancre nos moyens -->
-    </section>
+    
     <!-- Fin categorie ULM -->
     <!-- partie moyens pedagos-->
-    <section class="container-fluid">
+    <section class="pedagog container-fluid">
       <div class="row align-items-center">
         <div class="col-md-8">
           <div class="border-start border-4 border-light ps-5">
@@ -293,7 +272,7 @@
         </div>
         <div class="col-md-4 text-center">
           <img src="images/aerodrome.png" class="img-fluid mb-3" alt="photo d'un aérodrome d'illustration">
-          <p class=" fw-light">image d'illustration pixabay*</p>
+          <p class=" fw-light"><em>image d'illustration pixabay</em></p>
         </div>
       </div>
     </section>
@@ -333,7 +312,7 @@
                   </p>
                 </div>
                 <div class="card-footer">
-                  <span class="price orange-price">67€</span>
+                  <span class="text-light fs-2">67€</span>
                 </div>
               </div>
             </div>
@@ -358,7 +337,7 @@
                   </p>
                 </div>
                 <div class="card-footer">
-                  <span class="price blue-price">110€</span>
+                  <span class="text-light fs-2#">110€</span>
                 </div>
               </div>
             </div>
@@ -384,7 +363,7 @@
                   </p>
                 </div>
                 <div class="card-footer">
-                  <span class="price green-price">193€</span>
+                  <span class="text-light fs-2">193€</span>
                 </div>
                 <section id="galerie"></section><!-- c'est l'ancre, ne pas enlever -->
               </div>
@@ -429,55 +408,49 @@
               alt="Affiche sur le 1er rassemblement régional paca de femmes pilotes d'ULM" />
             <div class="carousel-caption d-none d-md-block">
               <h5>Rassemblement régional paca des femmes pilotes d'ULM</h5>
-              <p>Tout les ans un rassemblement de la région paca des femmes pilotes d'ULM se déroule sur nos pistes.</p>
+              <p>Tous les ans, un rassemblement de la région PACA des femmes pilotes d'ULM se déroule sur nos pistes.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="images/oldsite/course-2.jpg" class="d-block w-100" alt="Avion N°2" />
-            <!-- remplace le alt par un truc accurate car bon avion N°, c'est nul et pas assez bien pour le alt -->
+            <img src="images/oldsite/course-2.jpg" class="d-block w-100" alt="ULM multiaxe en formation pratique" />
             <div class="carousel-caption d-none d-md-block">
-              <h5>Avion N°2</h5>
-              <p>TEXTE</p>
+              <h5>Formation pratique multiaxe</h5>
+              <p>Découvrez notre flotte d'ULM multiaxes pour apprendre les bases du pilotage en toute sécurité.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="images/oldsite/pendulaire.jpg" class="d-block w-100" alt="Avion N°3" />
-            <!-- remplace le alt par un truc accurate car bon avion N°, c'est nul et pas assez bien pour le alt -->
+            <img src="images/oldsite/pendulaire.jpg" class="d-block w-100" alt="ULM pendulaire en vol" />
             <div class="carousel-caption d-none d-md-block">
-              <h5>Avion N°3</h5>
-              <p>TEXTE</p>
+              <h5>Vol en ULM pendulaire</h5>
+              <p>Expérimentez la sensation unique du vol libre avec nos ULM pendulaires ultra-légers.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="images/oldsite/course-5.jpg" class="d-block w-100" alt="Avion N°4" />
-            <!-- remplace le alt par un truc accurate car bon avion N°, c'est nul et pas assez bien pour le alt -->
+            <img src="images/oldsite/course-5.jpg" class="d-block w-100" alt="Cours de pilotage théorique et pratique" />
             <div class="carousel-caption d-none d-md-block">
-              <h5>Avion N°4</h5>
-              <p>TEXTE</p>
+              <h5>Formation complète</h5>
+              <p>Nos instructeurs qualifiés vous accompagnent de la théorie à la pratique pour obtenir votre licence.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="images/oldsite/course-7.jpg" class="d-block w-100" alt="Avion N°5" />
-            <!-- remplace le alt par un truc accurate car bon avion N°, c'est nul et pas assez bien pour le alt -->
+            <img src="images/oldsite/course-7.jpg" class="d-block w-100" alt="ULM en phase d'atterrissage" />
             <div class="carousel-caption d-none d-md-block">
-              <h5>Avion N°5</h5>
-              <p>TEXTE</p>
+              <h5>Perfectionnement atterrissage</h5>
+              <p>Maîtrisez les techniques d'atterrissage avec nos cours de perfectionnement sur piste.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="images/oldsite/course-12.jpg" class="d-block w-100" alt="Avion N°6" />
-            <!-- remplace le alt par un truc accurate car bon avion N°, c'est nul et pas assez bien pour le alt -->
+            <img src="images/oldsite/course-12.jpg" class="d-block w-100" alt="Baptême de l'air en ULM" />
             <div class="carousel-caption d-none d-md-block">
-              <h5>Avion N°6</h5>
-              <p>TEXTE</p>
+              <h5>Baptêmes de l'air</h5>
+              <p>Offrez-vous ou offrez un baptême de l'air inoubliable au-dessus des paysages de Franche-Comté.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="images/oldsite/cours-5.jpg" class="d-block w-100" alt="Avion N°7" />
-            <!-- remplace le alt par un truc accurate car bon avion N°, c'est nul et pas assez bien pour le alt -->
+            <img src="images/oldsite/cours-5.jpg" class="d-block w-100" alt="Formation théorique en salle de cours" />
             <div class="carousel-caption d-none d-md-block">
-              <h5>Avion N°7</h5>
-              <p>TEXTE</p>
+              <h5>Cours théoriques</h5>
+              <p>Apprenez la météorologie, la navigation et la réglementation dans notre salle de cours équipée.</p>
             </div>
           </div>
         </div>
@@ -516,8 +489,33 @@
       </svg>
     </div>
     <section class="row">
+      <!-- formulaire contact -->
+       <div class="infocontainer">
+      <div class="formulaire col-7 mt-5 mr-3">
+        <div id="contourform" class="rounded border-3 border border-light p-3">
+          <form>
+            <h1 class="text-light text-center fw-bold fs-2">Une envie de prendre rendez-vous ?<br> Contactez nous dès
+              maintenant.</h1>
+            <div class="mb-3">
+              <input type="text" class="form-control text-dark fw-light" id="nom" name="nom" placeholder="Votre nom">
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control text-dark fw-light" id="email" name="email"
+                aria-describedby="emailHelp" placeholder="Votre e-mail">
+              <div class="form-text fw-light">Nous ne partagerons jamais votre e-mail avec qui que ce soit.</div>
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control text-dark fw-light" id="message" name="message" rows="4"
+                placeholder="Votre message"></textarea>
+            </div>
+            <div class="d-flex justify-content-center">
+              <button type="submit" class="btn btn-primary border-2">Envoyer</button>
+            </div>
+          </form>
+        </div>
+      </div>
       <!-- infos -->
-      <div class="col-5 mt-5 ml-3 text-center text-dark fw-bolder">
+      <div class="infos col-5 mt-5 ml-3 text-center text-dark fw-bolder">
         <div class="d-flex flex-column align-items-center gap-3">
 
           <div class="rounded-circle border border-2 d-flex justify-content-center align-items-center"
@@ -539,30 +537,8 @@
           <p class="fs-5 text-uppercase">62, Avenue de la République, 70200 Lure</p>
         </div>
       </div>
-      <!-- formulaire contact -->
-      <div class="col-7 mt-5 mr-3">
-        <div id="contourform" class="rounded border-3 border border-light p-3">
-          <form>
-            <h1 class="text-light text-center fw-bold fs-2">Une envie de prendre rendez-vous ?<br> Contactez nous dès
-              maintenant.</h1>
-            <div class="mb-3">
-              <input type="text" class="form-control text-dark fw-light" id="nom" name="nom" placeholder="VOTRE NOM">
-            </div>
-            <div class="mb-3">
-              <input type="email" class="form-control text-dark fw-light" id="email" name="email"
-                aria-describedby="emailHelp" placeholder="VOTRE E-MAIL">
-              <div class="form-text fw-light">Nous ne partagerons jamais votre e-mail avec qui que ce soit.</div>
-            </div>
-            <div class="mb-3">
-              <textarea class="form-control text-dark fw-light" id="message" name="message" rows="4"
-                placeholder="VOTRE MESSAGE"></textarea>
-            </div>
-            <div class="d-flex justify-content-center">
-              <button type="submit" class="btn btn-primary border-2">Envoyer</button>
-            </div>
-          </form>
-        </div>
-      </div>
+    </div>
+      
       <div class="custom-shape-divider-bottom-1758144190">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
           <rect x="1200" height="3.6"></rect>
@@ -575,18 +551,9 @@
   </section>
 
   <footer class="container-fluid bg-site jump border-light border-top">
-    <br />
-    <div class="row">
-      <div class="col-4 text-center text-light">
-        <h5 class="mb-3">Nous contacter :</h5>
-        <p><i class="fas fa-phone me-2"></i>+33 01 60 56 60 60</p>
-        <p><i class="fas fa-envelope me-2"></i> acf2l@gmail.com</p>
-        <p>
-          <i class="fas fa-map-marker-alt me-2"></i>62, Avenue de la
-          République, 70200 Lure
-        </p>
-      </div>
-      <div class="col-4 border-white border-end border-start p-3 text-light text-center">
+    <div class="row py-4">
+      <!-- Colonne 1: Réseaux sociaux et copyright -->
+      <div class="suivez col-12 col-md-6 text-center text-light mb-4 mb-md-0">
         <h5 class="mb-3">Suivez-nous sur :</h5>
         <div class="d-flex justify-content-center gap-3">
           <a href="#facebook" class="text-light"><i class="fab fa-facebook fa-2x"></i></a>
@@ -604,22 +571,20 @@
           ( Aucune donnée n'est collecté sur ce site, tout formulaire est fictif )
         </p>
       </div>
-      <div class="col-4 text-center text-light">
+      
+      <!-- Colonne 2: Crédits et logo -->
+      <div class="aide col-12 col-md-6 text-center text-light">
         <h5 class="mb-3">Réalisé avec l'aide de :</h5>
-        <ul class="list-unstyled">
-          <li>
-            <a href="https://fontawesome.com" class="text-light">FontAwesome</a> <br>
-            <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/"
-              class="text-light">Bootstrap</a><br>
-            <a href="https://pixabay.com/photos/runway-airfield-airport-landing-1227526" class="text-light"> pixabay
-            </a>
-          </li>
-          <a href="#accueilancre"><img src="images/logo/logo2acf2l.png" width="125px" height="125px"
-              alt="Logo ACF2L" /></a>
-        </ul>
+        <div class="mb-3">
+          <a href="https://fontawesome.com" class="text-light">FontAwesome</a><br>
+          <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" class="text-light">Bootstrap</a><br>
+          <a href="https://pixabay.com/photos/runway-airfield-airport-landing-1227526" class="text-light">Pixabay</a>
+        </div>
+        <a href="#accueilancre">
+          <img src="images/logo/logo2acf2l.png" width="125px" height="125px" alt="Logo ACF2L" class="img-fluid" />
+        </a>
       </div>
     </div>
-    <br />
   </footer>
   <!-- bouton permettant de revenir en haut de la page -->
   <button id="backToTop" title="Retour en haut"
@@ -644,12 +609,11 @@
   });
   document.getElementById("backToTop").addEventListener("click", function () {
     window.scrollTo({
-      top: 0,
+      top: document.getElementById("accueilancre").offsetTop,
       behavior: "smooth",
     });
   });
 </script>
-<!-- [ PROBLEME ] : LA NAVBAR CREE UN EFFET DE TROU BLANC TOUT EN HAUT SI ON RETOURNE AU TOP ASSEZ RAPIDEMENT. -->
 <script>
   const navbar = document.getElementById("navbarlink");
   navbar.style.transition = "opacity 0.5s";
