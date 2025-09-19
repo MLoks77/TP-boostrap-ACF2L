@@ -655,9 +655,8 @@ ul + ul {
     margin: auto;
   }
 
-  .aide,
-  .suivez {
-    margin-top: 2rem;
+  #btnaccueil {
+    font-size: small;
   }
 
   .suivez h5 {
