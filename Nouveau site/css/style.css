@@ -573,6 +573,14 @@ ul + ul {
     font-size: larger;
   }
 
+  .suivez h5 {
+    font-size: 150%;
+  }
+
+  .aide h5 {
+    font-size: 150%;
+  }
+
   #navbarlink a {
     font-size: 13px;
   }
@@ -636,6 +644,8 @@ ul + ul {
 
   .formulaire {
     width: 100%;
+    order: 2;
+    margin-bottom: 2rem;
   }
 
   /* Réorganisation contact/formulaire en mobile */
@@ -645,11 +655,6 @@ ul + ul {
     width: 95%;
   }
 
-  .formulaire {
-    order: 2;
-    margin-bottom: 2rem;
-  }
-
   .infos {
     order: 1;
     margin: auto;
@@ -657,14 +662,6 @@ ul + ul {
 
   #btnaccueil {
     font-size: small;
-  }
-
-  .suivez h5 {
-    font-size: 150%;
-  }
-
-  .aide h5 {
-    font-size: 150%;
   }
 
   .ulm,
