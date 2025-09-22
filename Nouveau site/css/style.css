@@ -38,6 +38,10 @@ h1 {
   z-index: 1;
 }
 
+.bg-site3 {
+  background-color: #7b99af;
+}
+
 .bg-site2 {
   background: linear-gradient(180deg, #b6ae7e 10%, #83a4be 90%);
 }
@@ -168,7 +172,7 @@ ul + ul {
 }
 
 .custom-shape-divider-bottom-1758149137 .shape-fill {
-  fill: #83a4be;
+  fill: #7b99af;
 }
 
 .custom-shape-divider-top-1758144650 {
@@ -422,10 +426,7 @@ ul + ul {
 .carousel-control-prev {
   transform: rotate(180deg);
 }
-/* carousel fin CSS */
-.pedagog {
-  margin-bottom: 5%;
-}
+
 
 /* Custom Cards Styles */
 .custom-card {
